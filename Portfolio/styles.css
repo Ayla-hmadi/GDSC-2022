@@ -1,1 +1,189 @@
+body{
+    padding: 0;
+    font-size: larger;
+    background-color: #E5E5E5;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+}
+.container{
+    width: 100%;
+    margin: 0;
+}
+
+
+/* =-----------this is for the head navbar and general information -----------------*/
+
+.head{
+    background-image:url("assets/desk.jpeg") ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 700px;
+    position: relative;
+}
+
+/*navbar*/
+.navbar{
+    width: 100%;
+    display: flex;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    right: 0;
+
+}
+
+li{
+    margin: 10px 40px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#Logo{
+    margin-left: 20px;
+    color: white;
+}
+
+/*the header*/
+.information{
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+
+.information h3{
+    color: #FFBE1A
+    ;
+}
+
+.information > *{
+    text-align: center;
+}
+
+.name{
+    color: white;
+    margin-top: 100px;
+}
+
+.contact_me button{
+    margin-top: 20px;
+    padding: 20px 50px;
+    background-color: #FFBE1A;
+    color: white;
+    font-size: large;
+} 
+
+/*the small corners in the background image*/
+.corner{
+    width: 50%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+}
+
+.corner::after{
+    content: '';
+    width: 0;
+	height: 0;
+    position: absolute;
+    top:0px;
+	border-left: 632px solid #E5E5E5;
+	border-top: 100px solid transparent;
+    border-right: 632px solid #E5E5E5;
+}
+
+
+/* --------------------this is for the body, skills and projects--------------- */
+
+/* this is for the headers of skills and projects */
+.header3 {
+    margin-top: 60px;
+    margin-bottom: 0;
+    color: #FFBE1A;
+    text-align: center;
+}
+
+/* this is for the skills list */
+.drawing{
+    position:absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: -30px;
+    left: 30px;
+    background-color: black;
+}
+
+
+
+.wrapper{
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.wrapper::-webkit-scrollbar{
+    width: 0;
+    scroll-behavior: smooth;
+}
+
+.item{
+    background-color: white;
+    min-width: 25%;
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+}
+
+.item h2{
+    margin-top: 60px;
+}
+
+/* this is for the project boxes */
+.row{
+    width: 80%;
+    margin: 20px auto;
+    padding: 0;
+    display: flex;
+}
+
+.project{
+    width : 20%;
+    height: 250px;
+    margin: 0 auto;
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ToDO_list{background-image: url(assets/TOdo.jpeg);}
+.Product_page{background-image: url(assets/Product.jpeg);}
+.AR_birthday{background-image: url(assets/AR.jpeg);}
+.Weather_App{background-image: url(assets/Whatsapp\ App.jpeg);}
+.closet{background-image: url(assets/WhatsApp\ Image\ 2022-11-15\ at\ 1.49.39\ PM.jpeg);}
+.pills{background-image: url(assets/WhatsApp\ Image\ 2022-11-15\ at\ 1.49.44\ PM.jpeg);}
+
+
+/* this for the button of viewing more projects */
+.view_more{
+    display: grid;
+    justify-content: center;
+}
+
+.more_projects{
+    margin-top: 20px;
+    padding: 20px 50px;
+    border-style: none;
+    background-color: #FFBE1A;
+    color: white;
+    font-size: large;
+}
+
 
