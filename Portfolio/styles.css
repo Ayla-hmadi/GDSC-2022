@@ -94,9 +94,9 @@ a{
 	height: 0;
     position: absolute;
     top:0px;
-	border-left: 632px solid #E5E5E5;
+	border-left: 50vw solid #E5E5E5;
 	border-top: 100px solid transparent;
-    border-right: 632px solid #E5E5E5;
+    border-right: 50vw solid #E5E5E5;
 }
 
 
