@@ -1,0 +1,225 @@
+html{
+    scroll-behavior: smooth; /* this is for the smooth effectfor the contact me button*/
+}
+body{
+    padding: 0;
+    font-size: larger;
+    background-color: #E5E5E5;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+}
+.container{
+    width: 100%;
+    margin: 0;
+}
+
+button{
+    margin-top: 20px;
+    padding: 20px 50px;
+    background-color: #FFBE1A;
+    color: white;
+    font-size: large;
+    border-style: none;
+
+}
+
+button:hover{
+    background-color: blue;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* =-----------this is for the head navbar and general information -----------------*/
+
+.head{
+    background-image:url("assets/desk.jpeg") ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 700px;
+    position: relative;
+}
+
+/*navbar*/
+.navbar{
+    width: 100%;
+    display: flex;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    right: 0;
+
+}
+
+li{
+    margin: 10px 40px;
+}
+
+
+#Logo{
+    margin-left: 20px;
+    color: white;
+}
+
+/*the header*/
+.information{
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+
+.information h3{
+    color: #FFBE1A
+    ;
+}
+
+.information > *{
+    text-align: center;
+}
+
+.name{
+    color: white;
+    margin-top: 100px;
+}
+
+/*the small corners in the background image*/
+.corner{
+    width: 50%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+}
+
+.corner::after{
+    content: '';
+    width: 0;
+	height: 0;
+    position: absolute;
+    top:0px;
+	border-left: 50vw solid #E5E5E5;
+	border-top: 100px solid transparent;
+    border-right: 50vw solid #E5E5E5;
+}
+
+
+/* --------------------this is for the body, skills and projects--------------- */
+
+/* this is for the headers of skills and projects */
+.header3 {
+    margin-top: 60px;
+    /* margin-bottom: 10px; */
+    color: #FFBE1A;
+    text-align: center;
+}
+
+/* this is for the skills list */
+.drawing{
+    position:absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    top: -50px;
+    left: 30px;
+    padding: 10px;
+    /* background-color: black; */
+}
+
+iconify-icon{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #E6EEFF;
+    color: #ffbe1a;
+}
+
+.item:hover iconify-icon{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #1A62FF;
+    color: white;
+}
+
+
+
+.wrapper{
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    cursor: grab;
+    overflow: auto;
+}
+
+.wrapper::-webkit-scrollbar{
+    width: 0;
+    scroll-behavior: smooth;
+}
+
+.wrapper.active{
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+}
+
+.item{
+    background-color: white;
+    min-width: 25%;
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+}
+
+.item h2{
+    margin-top: 60px;
+}
+
+/* this is for the project boxes */
+.row{
+    width: 80%;
+    margin: 20px auto;
+    padding: 0;
+    display: flex;
+}
+
+.project{
+    width : 30%;
+    height: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    word-wrap: normal;
+    position: relative;
+}
+
+.project img{
+    width: 100% ;
+    height: 100%;
+}
+
+.project_item{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    display: none;
+}
+
+.project:hover img{
+    opacity: 0.5;
+}
+
+.project:hover .project_item{
+    display: block;
+}
+
+
+/* this for the button of viewing more projects */
+.view_more{
+    display: grid;
+    justify-content: center;
+}
