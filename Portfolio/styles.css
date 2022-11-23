@@ -1,7 +1,9 @@
-html{
-    scroll-behavior: smooth; /* this is for the smooth effectfor the contact me button*/
+html {
+    scroll-behavior: smooth;
+    /* this is for the smooth effectfor the contact me button*/
 }
-body{
+
+body {
     padding: 0;
     font-size: larger;
     background-color: #E5E5E5;
@@ -9,12 +11,13 @@ body{
     font-style: normal;
     font-weight: 700;
 }
-.container{
+
+.container {
     width: 100%;
     margin: 0;
 }
 
-button{
+button {
     margin-top: 20px;
     padding: 20px 50px;
     background-color: #FFBE1A;
@@ -24,19 +27,19 @@ button{
 
 }
 
-button:hover{
+button:hover {
     background-color: blue;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
 /* =-----------this is for the head navbar and general information -----------------*/
 
-.head{
-    background-image:url("assets/desk.jpeg") ;
+.head {
+    background-image: url("assets/desk.jpeg");
     background-repeat: no-repeat;
     background-size: 100%;
     height: 700px;
@@ -44,12 +47,12 @@ a{
 }
 
 /*navbar*/
-.navbar{
+.navbar {
     width: 100%;
     display: flex;
 }
 
-ul{
+ul {
     list-style: none;
     display: flex;
     position: absolute;
@@ -57,54 +60,53 @@ ul{
 
 }
 
-li{
+li {
     margin: 10px 40px;
 }
 
 
-#Logo{
+#Logo {
     margin-left: 20px;
     color: white;
 }
 
 /*the header*/
-.information{
+.information {
     width: 50%;
     position: absolute;
     top: 30%;
     left: 25%;
 }
 
-.information h3{
-    color: #FFBE1A
-    ;
+.information h3 {
+    color: #FFBE1A;
 }
 
-.information > *{
+.information>* {
     text-align: center;
 }
 
-.name{
+.name {
     color: white;
     margin-top: 100px;
 }
 
 /*the small corners in the background image*/
-.corner{
+.corner {
     width: 50%;
     height: 100px;
     position: absolute;
     bottom: 0;
 }
 
-.corner::after{
+.corner::after {
     content: '';
     width: 0;
-	height: 0;
+    height: 0;
     position: absolute;
-    top:0px;
-	border-left: 50vw solid #E5E5E5;
-	border-top: 100px solid transparent;
+    top: 0px;
+    border-left: 50vw solid #E5E5E5;
+    border-top: 100px solid transparent;
     border-right: 50vw solid #E5E5E5;
 }
 
@@ -120,8 +122,8 @@ li{
 }
 
 /* this is for the skills list */
-.drawing{
-    position:absolute;
+.drawing {
+    position: absolute;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -131,14 +133,14 @@ li{
     /* background-color: black; */
 }
 
-iconify-icon{
+iconify-icon {
     padding: 5px;
     border-radius: 50%;
     background-color: #E6EEFF;
     color: #ffbe1a;
 }
 
-.item:hover iconify-icon{
+.item:hover iconify-icon {
     padding: 5px;
     border-radius: 50%;
     background-color: #1A62FF;
@@ -147,7 +149,7 @@ iconify-icon{
 
 
 
-.wrapper{
+.wrapper {
     display: flex;
     overflow-x: auto;
     padding: 20px;
@@ -155,18 +157,18 @@ iconify-icon{
     overflow: auto;
 }
 
-.wrapper::-webkit-scrollbar{
+.wrapper::-webkit-scrollbar {
     width: 0;
     scroll-behavior: smooth;
 }
 
-.wrapper.active{
+.wrapper.active {
     cursor: grabbing;
     cursor: -webkit-grabbing;
     transform: scale(1);
 }
 
-.item{
+.item {
     background-color: white;
     min-width: 25%;
     padding: 10px;
@@ -174,20 +176,20 @@ iconify-icon{
     position: relative;
 }
 
-.item h2{
+.item h2 {
     margin-top: 60px;
 }
 
 /* this is for the project boxes */
-.row{
+.row {
     width: 80%;
     margin: 20px auto;
     padding: 0;
     display: flex;
 }
 
-.project{
-    width : 30%;
+.project {
+    width: 30%;
     height: 300px;
     margin: 0 auto;
     padding: 30px;
@@ -197,29 +199,150 @@ iconify-icon{
     position: relative;
 }
 
-.project img{
-    width: 100% ;
+.project img {
+    width: 100%;
     height: 100%;
 }
 
-.project_item{
+.project_item {
     position: absolute;
     top: 20%;
     left: 15%;
     display: none;
 }
 
-.project:hover img{
+.project:hover img {
     opacity: 0.5;
 }
 
-.project:hover .project_item{
+.project:hover .project_item {
     display: block;
 }
 
 
 /* this for the button of viewing more projects */
-.view_more{
+.view_more {
     display: grid;
     justify-content: center;
+}
+
+* for the footer */ .footer {
+    background: #FFBE1A;
+}
+
+.text-align-div {
+    margin-left: 50px;
+    font-family: 'Poppins';
+}
+
+.second {
+    align-items: center;
+
+
+}
+
+.flex-container {
+    margin-top: 50px;
+    display: flex;
+    align-items: stretch;
+    background-color: #f1f1f1;
+}
+
+.flex-container-div {
+    background-color: #FFBE1A;
+    color: white;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.social-menu ul {
+    line-height: normal;
+    display: flex;
+    position: relative;
+    padding-top: 32px;
+}
+
+.social-menu ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab {
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #FFFFFF;
+}
+
+.social-menu ul li .fab:hover {
+    color: #2C5386;
+}
+
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+    text-align: center;
+    transition: .6s;
+}
+
+.social-menu ul li a:hover {
+    transform: translateY(30%);
+}
+
+.span {
+    font-weight: bolder;
+}
+
+.text1 {
+    font-weight: 700;
+    size: 64px;
+    width: 150px;
+    height: 96px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 96px;
+    padding-top: 71px;
+}
+
+.text2 {
+    width: 185px;
+    height: 27px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    padding-top: 40px;
+}
+
+
+.text3 {
+    width: 390px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 32px;
+}
+
+.il {
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.button .icons .icon-default {
+    transition: opacity 0.3s;
+}
+
+.button:hover .icon-default {
+    color: #4679CD;
 }
