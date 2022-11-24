@@ -29,3 +29,12 @@ slider.addEventListener('mousemove',(e)=>{
     const walk = x-startX; //if we want to fasten it, we multiply it by the ratio
     slider.scrollLeft= scrollLeft- walk;
 });
+
+//For the header animation
+var typed = new Typed(".typing_header",{
+    strings: [ ,'Developer','LU Student','GDSC member'],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop:true,
+    cursorChar: '|',
+});
