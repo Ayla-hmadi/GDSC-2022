@@ -138,6 +138,7 @@ iconify-icon {
     border-radius: 50%;
     background-color: #E6EEFF;
     color: #ffbe1a;
+    transition:smooth;
 }
 
 .item:hover iconify-icon {
